@@ -4,9 +4,6 @@
       "$": true
     },
     "extends": "eslint:recommended",
-    "ecmaFeatures": {
-      "jsx": true
-    },
     "parserOptions": {
       "ecmaVersion": 6,
       "sourceType": "module"
@@ -16,8 +13,10 @@
       "es6": true,
       "jest": true,
       "jquery": true,
-      "jsx": true,
       "node": true
+    },
+    "ecmaFeatures": {
+      "jsx": true
     },
     "rules": {
       "eol-last": "error",
