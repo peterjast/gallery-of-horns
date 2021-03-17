@@ -26,18 +26,10 @@ class Likes extends React.Component {
 }
 
 class HornedBeasts extends React.Component {
-  // constructor(props){
-  //   super(props);
-  //   this.state={
-  //     numLikes: 0
-  //   };
-  // }
-
-likeBeast = () => this.setState({ numLikes: this.state.numLikes + 1 });
 
 render() {
   const beastList = beastData.map((beast, index) =>
-    <div key={index} className="col-sm-3 col-centered">
+    <div key={index} className="col-lg-3 col-centered">
       <Card className="my-2-auto" variant="dark" style={{ width: '18rem' }}>
         <Card.Img variant="top" src={beast.image_url} alt={beast.description} title={beast.title}/>
         <Card.Body>
