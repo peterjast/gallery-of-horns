@@ -11,15 +11,17 @@ import './app.css';
 class App extends React.Component {
   render() {
     return(
+      <>
+      <Header />
       <Container fluid>
         <Row>
           <Col>
-            <Header />
             <Main />
-            <Footer />
           </Col>
         </Row>
       </Container>
+      <Footer />
+      </>
     );
   }
 }
