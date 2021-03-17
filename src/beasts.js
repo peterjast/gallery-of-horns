@@ -5,13 +5,33 @@ import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 
-class HornedBeasts extends React.Component {
+class Likes extends React.Component {
   constructor(props){
     super(props);
     this.state={
       numLikes: 0
     };
-  }
+  }  
+
+  likeBeast = () => this.setState({ numLikes: this.state.numLikes + 1 });
+
+  render() {
+    return (
+      <>
+      <Card.Text>{this.state.numLikes} likes</Card.Text>
+      <Button variant="primary" onClick={this.likeBeast}>💖</Button>   
+      </>
+    );
+  }  
+}
+
+class HornedBeasts extends React.Component {
+  // constructor(props){
+  //   super(props);
+  //   this.state={
+  //     numLikes: 0
+  //   };
+  // }
 
 likeBeast = () => this.setState({ numLikes: this.state.numLikes + 1 });
 
@@ -23,8 +43,7 @@ render() {
         <Card.Body>
           <Card.Title>{beast.title}</Card.Title>
           <Card.Text>{beast.description}</Card.Text>
-          <Card.Text>{this.state.numLikes} likes</Card.Text>
-          <Button variant="primary"onClick={this.likeBeast}>💖</Button>
+          <Likes />
         </Card.Body>
       </Card>
     </div>
