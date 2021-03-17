@@ -1,4 +1,50 @@
-# Getting Started with Create React App
+# Gallery of Horns
+
+Author: Peter Staker
+
+Web application made with React, Bootstrap & JavaScript
+
+Deployed with netlify: [Gallery of Horns](https://focused-hamilton-904901.netlify.app/)
+
+## Time Estimate
+
+Number and name of feature: #1 Display images
+
+Estimate of time needed to complete: 1hour
+
+Start time: 3pm
+
+Finish time: 4:30pm
+
+Actual time needed to complete: 1.5hours
+
+***
+
+Number and name of feature: #2 Allow users to vote for their favorite beast
+
+Estimate of time needed to complete: 1hour
+
+Start time: 4:45pm
+
+Finish time: 5:15pm
+
+Actual time needed to complete: 30minutes
+
+***
+
+Number and name of feature: #3 Bootstrap
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 5:15pm
+
+Finish time: 7pm
+
+Actual time needed to complete: 1 hour and 45 minutes
+
+***
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
