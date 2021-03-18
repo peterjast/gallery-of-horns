@@ -8,19 +8,21 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './app.css';
 import rawData from './data.json';
+import SelectedBeast from './selectedBeast.js';
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
       beastData: rawData,
-      isSelected: false
+      isSelected: false,
+      selectedBeast: {}
     }
   }
 
-  selectBeast = () => this.setState({ isSelected: false});
+  displaySelected = (index) => this.setState({ selectedBeast: this.state.beastData[index], isSelected: true });
 
-  handleClose = () => this.setState({ isSelected: true});
+  handleClose = () => this.setState({ isSelected: false});
 
   render() {
     return(
@@ -31,9 +33,12 @@ class App extends React.Component {
           <Col>
             <Main
               beastData={this.state.beastData}
-              isSelected={this.state.isSelected}
-              unselectBeast={this.handleClose}
-              showBeast={this.selectBeast}
+              displaySelected={this.displaySelected}
+            />
+            <SelectedBeast
+              selectedBeast={this.state.selectedBeast}
+              show={this.state.isSelected}
+              handleClose={this.handleClose}
             />
           </Col>
         </Row>
