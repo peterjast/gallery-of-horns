@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Chango&display=swap');
+body {
+  width: 100%;
+}
+
+header {
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  color: white;
+}
+  
+#App {
+  padding: 60px 15px 0;
+}
+
+.navbar-brand {
+  font-family: 'Chango', cursive;
+}
+
+.modal-title {
+  font-family: 'Chango', cursive;
+}
+
+.card-title {
+  font-family: 'Chango', cursive;
+}
+
+.card-text {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+button {
+  font-family: 'Balsamiq Sans', cursive;
+}

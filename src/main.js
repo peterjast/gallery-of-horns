@@ -2,6 +2,7 @@ import React from 'react';
 import HornedBeast from './beasts.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CardDeck from 'react-bootstrap/CardDeck';
+import './assets/main.css';
 
 class Main extends React.Component {
 
