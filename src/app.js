@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './app.css';
+import './assets/app.css';
 import rawData from './data.json';
 import SelectedBeast from './selectedBeast.js';
 
@@ -24,14 +24,16 @@ class App extends React.Component {
 
   handleClose = () => this.setState({ isSelected: false});
 
+  updateBeastData = (beastData) => this.setState({ beastData });
+
   render() {
     return(
       <>
-      <Header />
-      <Container fluid>
+      <Header filterBeasts={this.updateBeastData}/>
+      <Container fluid className="h-100 mb-auto">
         <Row>
           <Col>
-            <Main
+            <Main 
               beastData={this.state.beastData}
               displaySelected={this.displaySelected}
             />
